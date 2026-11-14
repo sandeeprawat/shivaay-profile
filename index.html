@@ -19,6 +19,8 @@
     header { display: flex; justify-content: space-between; align-items: center; padding-top: 30px !important; padding-bottom: 26px !important; border-bottom: 1px solid #243d3520; }
     .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; font-size: 23px; font-weight: 850; letter-spacing: -1px; }
     .brand-mark { display: grid; place-items: center; width: 35px; height: 35px; border-radius: 50%; background: var(--yellow); font-size: 24px; }
+    header { flex-wrap: wrap; gap: 18px; }
+    nav { display: flex; flex-wrap: wrap; gap: 22px; }
     nav a { text-decoration: none; font-size: 13px; font-weight: 650; }
     nav a::after { content: " \2197"; color: var(--blue); font-size: 18px; }
     .hero { display: grid; grid-template-columns: 1.05fr 1fr; gap: 76px; align-items: center; padding: 75px 0 66px; }
@@ -56,6 +58,7 @@
     .card-decoration { position: absolute; right: 23px; top: 22px; font-size: 25px; color: #66765c; }
     .wave-banner { margin: 34px 0 40px; padding: 28px 31px; border-radius: 15px; display: flex; align-items: center; justify-content: space-between; gap: 25px; background: var(--yellow); }
     .wave-banner h2 { font-size: 23px; margin: 0 0 7px; }
+    .story-banner { background: #e7ebfa; }
     .wave-banner p { margin: 0; font-size: 13px; line-height: 1.6; }
     .high-five { flex-shrink: 0; min-width: 158px; justify-content: center; gap: 12px; }
     #greeting { min-height: 21px; }
@@ -97,7 +100,7 @@
 <body>
   <header class="wrap">
     <a class="brand" href="#" aria-label="Shivaay home"><span class="brand-mark" aria-hidden="true">*</span> shivaay.</a>
-    <nav aria-label="Main navigation"><a href="#about">A little about me</a></nav>
+    <nav aria-label="Main navigation"><a href="#about">A little about me</a><a href="story.html">My story</a></nav>
   </header>
   <main class="wrap">
     <section class="hero" aria-labelledby="hello-heading">
@@ -142,6 +145,10 @@
           <p>Where my learning journey continues</p>
         </article>
       </div>
+    </section>
+    <section class="wave-banner story-banner" aria-labelledby="story-heading">
+      <div><h2 id="story-heading">A little space for big stories.</h2><p>My story has a page of its own. A new adventure is coming soon!</p></div>
+      <a class="button" href="story.html">Visit my story page <span aria-hidden="true">&rarr;</span></a>
     </section>
     <section class="wave-banner" aria-labelledby="thanks-heading">
       <div><h2 id="thanks-heading">Small page. Big smiles.</h2><p id="greeting" role="status" aria-live="polite">Thanks for stopping by my little corner of the internet.</p></div>
